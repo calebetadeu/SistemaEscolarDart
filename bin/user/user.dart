@@ -1,4 +1,10 @@
-class User {
+
+
+import 'dart:io';
+
+import 'actionsUser.dart';
+
+class User implements actionUser {
   int id;
   String name;
   int age;
@@ -17,4 +23,29 @@ class User {
       required this.email,
       required this.nickname,
       required this.password});
-}
+      
+        @override
+        void login() {
+            print("Digite o seu usuário:");
+            String? nickNameInput = stdin.readLineSync();
+       
+           print("Digite sua senha:");
+            String ? passwordInput=  stdin.readLineSync();
+
+           if(nickNameInput == nickname && passwordInput == password){
+             print("You are logged in");
+           }else{
+              print("Your credentials don't match");
+         }
+        }
+        
+          @override
+          void logout() {
+            ("Logout done!");
+          }
+
+   
+     
+     
+  }
+

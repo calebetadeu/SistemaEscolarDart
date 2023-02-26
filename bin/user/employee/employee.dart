@@ -1,10 +1,12 @@
 
 
 import '../user.dart';
+import 'actions_employees.dart';
 
-class Employee extends User {
+class Employee extends User implements ActionsEmployee {
   Employee(
-      {required int id,
+      {
+      required int id,
       required String name,
       required int age,
       required String gender,
@@ -24,4 +26,12 @@ class Employee extends User {
           nickname: nickname,
           password: password,
         );
-}
+        
+          @override
+          void toClockIn() {
+            print("toClockIn is done");
+          }
+          
+
+
+} 
