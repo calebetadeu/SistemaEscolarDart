@@ -11,7 +11,7 @@ void main () {
     email:"calebe@gmail.com", 
      nickname: "calebetadeu", 
      password: "1234", 
-     salario: 2.500, 
+     salary: 2.500, 
      bonus: 500,
       schoolSubject: "Musica", 
       resourcesToLesson: <String>["Ukulele,Violão,Percussão"], 

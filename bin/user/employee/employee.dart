@@ -4,6 +4,8 @@ import '../user.dart';
 import 'actions_employees.dart';
 
 class Employee extends User implements ActionsEmployee {
+    double salary;
+    double bonus;
   Employee(
       {
       required int id,
@@ -14,8 +16,8 @@ class Employee extends User implements ActionsEmployee {
       required String email,
       required String nickname,
       required String password,
-      required double salario,
-      required double bonus})
+      required  this.salary,
+      required  this.bonus})
       : super(
           id: id,
           name: name,
@@ -31,6 +33,12 @@ class Employee extends User implements ActionsEmployee {
           void toClockIn() {
             print("toClockIn is done");
           }
+          
+            @override
+            double salaryCalculation() {
+              return salary + bonus ;
+            }
+
           
 
 

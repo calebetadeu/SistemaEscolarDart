@@ -10,7 +10,7 @@ class Teacher extends Employee{
     required super.email,  
     required super.nickname,
     required super.password,
-    required super.salario, 
+    required super.salary, 
     required super.bonus,
     required String schoolSubject,
     required List<String> resourcesToLesson,

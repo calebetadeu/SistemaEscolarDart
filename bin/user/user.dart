@@ -1,10 +1,8 @@
 
-
 import 'dart:io';
+import 'actions_user.dart';
 
-import 'actionsUser.dart';
-
-class User implements actionUser {
+class User implements ActionUser {
   int id;
   String name;
   int age;
